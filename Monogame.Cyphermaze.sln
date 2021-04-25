@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogame.Cyphermaze.App", "Monogame.Cyphermaze.App\Monogame.Cyphermaze.App.csproj", "{25C3C550-2208-48AE-94AF-E4845EA3E40A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Monogame.Cyphermaze.Core", "Monogame.Cyphermaze.Core\Monogame.Cyphermaze.Core.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Monogame.Cyphermaze.Core\Monogame.Cyphermaze.Core.projitems*{25c3c550-2208-48ae-94af-e4845ea3e40a}*SharedItemsImports = 4
+		Monogame.Cyphermaze.Core\Monogame.Cyphermaze.Core.projitems*{a0cdbd0e-3a41-42b7-9425-a838bc2c7383}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|ARM.Build.0 = Debug|ARM
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|x64.ActiveCfg = Debug|x64
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|x64.Build.0 = Debug|x64
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|x64.Deploy.0 = Debug|x64
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|x86.ActiveCfg = Debug|x86
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|x86.Build.0 = Debug|x86
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Debug|x86.Deploy.0 = Debug|x86
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|ARM.ActiveCfg = Release|ARM
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|ARM.Build.0 = Release|ARM
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|ARM.Deploy.0 = Release|ARM
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|x64.ActiveCfg = Release|x64
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|x64.Build.0 = Release|x64
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|x64.Deploy.0 = Release|x64
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|x86.ActiveCfg = Release|x86
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|x86.Build.0 = Release|x86
+		{25C3C550-2208-48AE-94AF-E4845EA3E40A}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D42D55BD-059C-45DE-A143-6494EF9B97A0}
+	EndGlobalSection
+EndGlobal
