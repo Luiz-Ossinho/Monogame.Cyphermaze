@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogame.Cyphermaze.App", "
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Monogame.Cyphermaze.Core", "Monogame.Cyphermaze.Core\Monogame.Cyphermaze.Core.shproj", "{A0CDBD0E-3A41-42B7-9425-A838BC2C7383}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{67286040-8648-4765-87F9-98397B223BDF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Monogame.Cyphermaze.Core\Monogame.Cyphermaze.Core.projitems*{25c3c550-2208-48ae-94af-e4845ea3e40a}*SharedItemsImports = 4
