@@ -32,13 +32,24 @@ namespace Monogame.Cyphermaze.App
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            //var triangleEffect = new TraingleEffect(this);
-            //LastPrint = triangleEffect.LastPrint;
-            //Postprocessors.Add(triangleEffect);
-            var triangleEffect = new TetrahedronEffect(this);
-            LastPrint = triangleEffect.LastPrint;
-            Postprocessors.Add(triangleEffect);
-            Postprocessors.Add(new CyphertextEffect(this));
+            var MagicNumbers = new
+            {
+                WidthMult = (1.0f / 10.0f),
+                HeightMult = (1.0f / 10.0f),
+                NumSlot = 256
+            };
+
+            var WidthHeight = new
+            {
+                Width = (int)(GraphicsDevice.Viewport.Width * MagicNumbers.WidthMult),
+                Height = (int)(GraphicsDevice.Viewport.Height * MagicNumbers.HeightMult)
+            };
+
+            var geometryEffect = new IcosahedronEffect(this, WidthHeight.Width, WidthHeight.Height);
+            LastPrint = geometryEffect.LastPrint;
+            Postprocessors.Add(geometryEffect);
+
+            Postprocessors.Add(new CyphertextEffect(this, WidthHeight.Width, WidthHeight.Height, MagicNumbers.NumSlot));
             // TODO: use this.Content to load your game content here
         }
 

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Monogame.Cyphermaze.Core.Effects
 {
-    public class CyphertextEffect : Postprocessor
+    public class ColorlessCyphertextEffect : Postprocessor
     {
         public Effect cyphertextEffect { get; private set; }
         public VertexBuffer CyphertextBuffer { get; private set; }
@@ -22,10 +22,11 @@ namespace Monogame.Cyphermaze.Core.Effects
         };
         private int NUM_SLOTS;
         private Texture2D TextTexture { get; }
-        public CyphertextEffect(Game game, int xRes, int yRes, int Num_Slot = 256) : base(game, xRes, yRes)
+        public ColorlessCyphertextEffect(Game game, int xRes, int yRes, int Num_Slot = 256) : base(game,xRes,yRes)
         {
+            cyphertextEffect = Game.Content.Load<Effect>("colorlesscyphertext");
             NUM_SLOTS = Num_Slot;
-            cyphertextEffect = Game.Content.Load<Effect>("cyphertext");
+
             TextTexture = BitmapFontGenerator.GenerateTextTexture(Game.Content.Load<Texture2D>("TextTexture"), NUM_SLOTS, Game.GraphicsDevice);
 
             TextureReader.ReadTexture(TextTexture);
@@ -39,6 +40,7 @@ namespace Monogame.Cyphermaze.Core.Effects
 
         public override void Apply(RenderTarget2D LastPrint)
         {
+
             cyphertextEffect.Parameters["dstLetterSize"].SetValue(new Vector2(1.0f / LastPrint.Width, 1.0f / LastPrint.Height));
             cyphertextEffect.Parameters["sourceTex"].SetValue(LastPrint);
             Game.GraphicsDevice.SetVertexBuffer(CyphertextBuffer);
