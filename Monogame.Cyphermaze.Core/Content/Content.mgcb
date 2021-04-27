@@ -13,6 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin colorlesscyphertext.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:colorlesscyphertext.fx
+
 #begin text.png
 /importer:TextureImporter
 /processor:TextureProcessor

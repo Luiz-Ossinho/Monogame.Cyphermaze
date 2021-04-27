@@ -15,6 +15,12 @@ namespace Monogame.Cyphermaze.Core.Abstractions
             Game = game;
             LastPrint = new RenderTarget2D(game.GraphicsDevice, game.GraphicsDevice.PresentationParameters.BackBufferWidth, game.GraphicsDevice.PresentationParameters.BackBufferHeight);
         }
+
+        protected Postprocessor(Game game, int xRes, int yRes)
+        {
+            Game = game;
+            LastPrint = new RenderTarget2D(game.GraphicsDevice, xRes, yRes,true,SurfaceFormat.Color,DepthFormat.Depth16);
+        }
         public void BeforeDraw()
         {
             Game.GraphicsDevice.SetRenderTarget(LastPrint);

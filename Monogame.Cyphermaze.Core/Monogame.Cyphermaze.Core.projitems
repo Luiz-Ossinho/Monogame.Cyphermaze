@@ -11,8 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Abstractions\Letter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Abstractions\Postprocessor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\ColorlessCyphertextEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\CyphertextEffect.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Effects\TetrahedronEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\IcosahedronEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\TraingleEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tools\BitmapFontGenerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Tools\TextureReader.cs" />

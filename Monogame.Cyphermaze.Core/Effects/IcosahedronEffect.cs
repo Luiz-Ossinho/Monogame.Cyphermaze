@@ -7,12 +7,12 @@ using System.Text;
 
 namespace Monogame.Cyphermaze.Core.Effects
 {
-    public class TetrahedronEffect : Postprocessor
+    public class IcosahedronEffect : Postprocessor
     {
         public BasicEffect TriangleEffect { get; private set; }
         public VertexBuffer TriangleBuffer { get; private set; }
         public bool IsTriangleDrawn { get; private set; } = false;
-        public TetrahedronEffect(Game game) : base(game)
+        public IcosahedronEffect(Game game, int xRes, int yRes) : base(game, xRes, yRes)
         {
             TriangleEffect = new BasicEffect(game.GraphicsDevice);
             TriangleEffect.World = Matrix.CreateTranslation(0, 0, 0);
