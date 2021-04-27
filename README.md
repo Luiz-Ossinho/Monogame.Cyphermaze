@@ -1,7 +1,14 @@
-# Cyphermaze
+﻿# Cyphermaze
 
 Cyphermaze is a Monogame project wich aims to make a 3d rendering engine with text-based graphics.
 This is a for-fun and for-study project, feel free to copy,add or discuss anything.
+
+## <font color="red">PROJECT STATUS</font>
+
+### Current status: <font color="#83d4eb">ICEBOX</font> 🧊
+
+With the shaders ready and working, I've moved on to other projects for now.
+I still have interest in this project however, just need to figure out other stuff first.
 
 ## Installation
 
